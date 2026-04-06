@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sorry Papa ❤️</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- YouTube Player -->
+<div id="ytMusic"></div>
+<script src="https://www.youtube.com/iframe_api"></script>
+
+<div class="container">
+  <h1>Sorry Papa 💔</h1>
+  <p id="typing"></p>
+
+  <button onclick="acceptApology()">Please Accept</button>
+
+  <!-- Controls -->
+  <div class="controls">
+    <button onclick="playMusic()">▶️</button>
+    <button onclick="pauseMusic()">⏸️</button>
+    <br><br>
+    <input type="range" min="0" max="100" value="50" onchange="setVolume(this.value)">
+  </div>
+
+  <p id="response"></p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
